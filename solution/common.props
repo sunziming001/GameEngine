@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <IncRoot>$(SolutionDir)..\include</IncRoot>
+    <SrcRoot>$(SolutionDir)..\src</SrcRoot>
+    <BinRoot>$(SolutionDir)..\bin</BinRoot>
+    <ObjRoot>$(SolutionDir)..\obj</ObjRoot>
+    <LibRoot>$(SolutionDir)..\lib</LibRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(BinRoot)\$(Configuration)\</OutDir>
+    <IntDir>$(ObjRoot)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(IncRoot);$(IncRoot)\GameEngine</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(LibRoot)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="IncRoot">
+      <Value>$(IncRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="SrcRoot">
+      <Value>$(SrcRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BinRoot">
+      <Value>$(BinRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ObjRoot">
+      <Value>$(ObjRoot)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LibRoot">
+      <Value>$(LibRoot)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -13,5 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\core">
+      <UniqueIdentifier>{99376687-0e60-4eb5-8925-85a2e59edccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\core">
+      <UniqueIdentifier>{75da4dc2-d979-4882-a698-d18c82b27549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\GameEngine\core\AbsGameApplication.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GameEngine\core\CoreMacros.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\GameEngine\core\AbsGameApplication.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

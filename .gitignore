@@ -31,3 +31,6 @@
 
 # visual studio files
 *.user
+bin
+obj
+.vs
